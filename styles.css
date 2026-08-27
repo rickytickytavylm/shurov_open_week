@@ -256,24 +256,6 @@ h2 { font-size: clamp(44px, 7vw, 88px); margin-bottom: 20px; }
   max-width: none;
 }
 
-.doors {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
-  padding: 56px 28px 8px;
-}
-.doors article {
-  padding: 36px 36px 36px 0;
-  border-top: 1px solid var(--line);
-}
-.doors article:last-child {
-  padding-right: 0;
-  padding-left: 36px;
-  border-left: 1px solid var(--line);
-}
-.doors h2 { font-size: clamp(36px, 5vw, 64px); }
-.doors .btn { margin-top: 18px; }
-
 .sheet {
   display: none;
   position: fixed;
@@ -309,13 +291,6 @@ h2 { font-size: clamp(44px, 7vw, 88px); margin-bottom: 20px; }
   text-transform: uppercase;
   cursor: pointer;
 }
-.sheet-ways {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-top: 22px;
-}
-.sheet-ways .btn { width: 100%; }
 .pay-mount {
   margin-top: 18px;
   min-height: 240px;
@@ -396,11 +371,9 @@ h2 { font-size: clamp(44px, 7vw, 88px); margin-bottom: 20px; }
   right: 12px;
   bottom: calc(12px + env(safe-area-inset-bottom));
   z-index: 40;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
 }
 .dock button {
+  width: 100%;
   min-height: 52px;
   padding: 14px 12px;
   border: 0;
@@ -412,10 +385,6 @@ h2 { font-size: clamp(44px, 7vw, 88px); margin-bottom: 20px; }
   text-transform: uppercase;
   cursor: pointer;
 }
-.dock button + button {
-  background: var(--mint);
-  color: var(--ink);
-}
 .dock[hidden] { display: none; }
 
 @media (min-width: 861px) {
@@ -423,7 +392,7 @@ h2 { font-size: clamp(44px, 7vw, 88px); margin-bottom: 20px; }
 }
 
 @media (max-width: 1100px) {
-  .days, .steps, .voices, .trio-days, .doors { grid-template-columns: 1fr; }
+  .days, .steps, .voices, .trio-days { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 860px) {
@@ -475,13 +444,7 @@ h2 { font-size: clamp(44px, 7vw, 88px); margin-bottom: 20px; }
   .pad { padding-top: 56px; padding-bottom: 56px; }
   .stats, .when { padding: 28px 16px 0; }
   .stats { grid-template-columns: 1fr 1fr; }
-  .when, .voices, .days, .trio-days, .split, .reg, .steps, .rail, .doors, .sheet-ways { grid-template-columns: 1fr; }
-  .doors { padding: 40px 16px 12px; }
-  .doors article,
-  .doors article:last-child {
-    padding: 28px 0;
-    border-left: 0;
-  }
+  .when, .voices, .days, .trio-days, .split, .reg, .steps, .rail { grid-template-columns: 1fr; }
   .offer-card { padding: 28px 20px; }
   .stats li { padding: 16px 16px 12px 0; }
   .voices li { border-right: 0; padding: 22px 0; border-bottom: 1px solid var(--line); }

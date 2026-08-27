@@ -4,19 +4,15 @@
   function fill() {
     const dates = cfg.DATES || "7, 9 и 12 сентября";
     const time = cfg.TIME || "три эфира, онлайн";
-    const webinar = cfg.WEBINAR_WHEN || "сегодня, 27 августа, 19:00";
     document.querySelectorAll('[data-field="dates"]').forEach((el) => { el.textContent = dates; });
     document.querySelectorAll('[data-field="time"]').forEach((el) => { el.textContent = time; });
-    document.querySelectorAll('[data-field="webinar"]').forEach((el) => { el.textContent = webinar; });
     document.querySelectorAll('[data-field="price"]').forEach((el) => { el.textContent = cfg.PRICE || "2 990 ₽"; });
-    document.querySelectorAll('[data-link="tg"]').forEach((a) => { if (cfg.TG_WEBINAR) a.href = cfg.TG_WEBINAR; });
-    document.querySelectorAll('[data-link="site"]').forEach((a) => { if (cfg.SITE_WEBINAR) a.href = cfg.SITE_WEBINAR; });
   }
 
   function reveal() {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const nodes = document.querySelectorAll(
-      ".hero-copy, .shot, .doors article, .stats li, .when div, .voices li, .panel, .steps li, .days li, .rail li, .offer-copy, .offer-card"
+      ".hero-copy, .shot, .stats li, .when div, .voices li, .panel, .steps li, .days li, .rail li, .offer-copy, .offer-card"
     );
     const io = new IntersectionObserver(
       (entries) => {
