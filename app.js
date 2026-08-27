@@ -37,12 +37,21 @@
 
   function mountWidget() {
     const box = document.getElementById("gc-mount");
-    if (!box || box.dataset.ready === "1") return;
+    if (!box || box.querySelector("iframe")) return;
+    const hash = cfg.GC_WIDGET_HASH || "1137a73eaef7eb6e6e05c46e8ce240793655ffec";
+    const src = cfg.GC_WIDGET_SRC || "https://tvoi-shag.online/pl/lite/widget/script?id=1648245";
+    const existing = document.getElementById(hash);
+    if (existing) {
+      document.dispatchEvent(new Event("StartWidget" + hash));
+      return;
+    }
     const script = document.createElement("script");
-    script.id = cfg.GC_WIDGET_HASH || "1137a73eaef7eb6e6e05c46e8ce240793655ffec";
-    script.src = cfg.GC_WIDGET_SRC || "https://tvoi-shag.online/pl/lite/widget/script?id=1648245";
+    script.id = hash;
+    script.src = src;
+    script.onload = function () {
+      document.dispatchEvent(new Event("StartWidget" + hash));
+    };
     box.appendChild(script);
-    box.dataset.ready = "1";
   }
 
   function sheets() {
