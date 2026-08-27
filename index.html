@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#5CBFAB" />
   <title>Открытая неделя «Созависимые отношения». Школа доктора Шурова</title>
-  <meta name="description" content="Три живых вечера: увидеть свой сценарий созависимых отношений и понять, куда идти дальше. 2 990 ₽." />
+  <meta name="description" content="Сегодня бесплатный вебинар в 19:00. Затем 6 дней открытой недели: три эфира 7, 9 и 12 сентября и чат поддержки. 2 990 ₽." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet" />
@@ -16,24 +16,26 @@
     <header class="nav">
       <a class="brand" href="#top">школа доктора шурова</a>
       <nav>
-        <a href="#for">для кого</a>
-        <a href="#week">три вечера</a>
+        <a href="#intro">сегодня</a>
+        <a href="#week">неделя</a>
         <a href="#offer">оплата</a>
       </nav>
-      <a class="btn" href="#offer">к оплате</a>
+      <button class="btn" type="button" data-open="sheet-webinar">на вебинар</button>
     </header>
 
     <div class="ticker" aria-hidden="true">
       <div class="track">
-        <span>вебинар</span><i></i>
-        <span>27 августа 19:00</span><i></i>
+        <span>вебинар сегодня 19:00</span><i></i>
+        <span>6 дней</span><i></i>
+        <span>7, 9 и 12 сентября</span><i></i>
+        <span>чат поддержки</span><i></i>
         <span>2 990 ₽</span><i></i>
-        <span>своя карта</span><i></i>
         <span>василий шуров</span><i></i>
-        <span>вебинар</span><i></i>
-        <span>27 августа 19:00</span><i></i>
+        <span>вебинар сегодня 19:00</span><i></i>
+        <span>6 дней</span><i></i>
+        <span>7, 9 и 12 сентября</span><i></i>
+        <span>чат поддержки</span><i></i>
         <span>2 990 ₽</span><i></i>
-        <span>своя карта</span><i></i>
         <span>василий шуров</span><i></i>
       </div>
     </div>
@@ -50,48 +52,55 @@
         </figcaption>
       </figure>
       <div class="hero-copy">
-        <p class="eye">открытая неделя · 2 990 ₽</p>
+        <p class="eye">открытая неделя · 6 дней · 2 990 ₽</p>
         <h1>свой сценарий &rarr;</h1>
-        <p class="sub">три живых вечера</p>
+        <p class="sub">три эфира и чат поддержки</p>
         <p class="display">созависимые отношения</p>
         <p class="lead">Как устроен повторяющийся жизненный сценарий рядом с близким человеком и что в нём можно изменить без разрушения связи.</p>
         <p class="lead soft">Вы можете любить, заботиться, оставаться рядом и при этом не терять себя.</p>
         <div class="actions dual">
-          <a class="btn ico" data-link="tg" href="https://t.me/Shurov_ai_bot?start=guide" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.7 3.3c.3-.9-.6-1.7-1.5-1.3L2.4 9.2c-.9.4-.9 1.7.1 2l4.7 1.5 1.8 5.6c.2.7 1.1.9 1.6.4l2.6-2.5 4.5 3.3c.7.5 1.7.1 1.9-.7l3.1-15.5ZM8.4 12.6l9.7-6.1-7.6 7.3-.3 2.5-1.8-3.7Z"/></svg>
-            в телеграм
-          </a>
-          <a class="btn ghost ico" data-link="site" href="https://kira-ai.online/?src=guide" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 5h16v12H4V5Zm0 14h16v2H4v-2Zm8-6.5a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm0-2a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"/></svg>
-            на сайте
-          </a>
+          <button class="btn ico" type="button" data-open="sheet-webinar">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 5v14M5 12h14"/></svg>
+            на вебинар сегодня
+          </button>
+          <button class="btn ghost ico" type="button" data-open="sheet-pay">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 6h16v12H4V6Zm2 4h12M6 14h6"/></svg>
+            оплатить неделю
+          </button>
         </div>
       </div>
     </section>
   </div>
 
   <main>
-    <section class="band paper" id="intro">
-      <div class="intro wrap">
-        <div>
-          <p class="eye">вход</p>
-          <h2>вебинар 27 августа</h2>
-          <p class="lead">В 19:00 Василий Шуров подробно расскажет, как устроена открытая неделя и кому она действительно поможет. Вы можете записаться на трансляцию через Telegram или прямо на сайте.</p>
-        </div>
-      </div>
+    <section class="doors wrap" id="intro">
+      <article>
+        <p class="eye">сегодня · бесплатно</p>
+        <h2>вебинар</h2>
+        <p class="lead">27 августа, 19:00. Василий Шуров расскажет, как устроена открытая неделя и кому она подойдёт.</p>
+        <p class="mute">Запись в два окна: Telegram или сайт.</p>
+        <button class="btn" type="button" data-open="sheet-webinar">записаться на вебинар</button>
+      </article>
+      <article>
+        <p class="eye">затем · 2 990 ₽</p>
+        <h2>неделя</h2>
+        <p class="lead">6 дней. Три эфира 7, 9 и 12 сентября. Чат поддержки на всю неделю.</p>
+        <p class="mute">Оплата на защищённой странице GetCourse.</p>
+        <button class="btn ghost" type="button" data-open="sheet-pay">оплатить участие</button>
+      </article>
     </section>
 
     <section class="band paper">
       <ul class="stats wrap">
-        <li><b>3</b>вечера</li>
-        <li><b>90</b>минут вебинар</li>
+        <li><b>6</b>дней</li>
+        <li><b>3</b>эфира</li>
         <li><b data-field="price">2 990 ₽</b>участие</li>
-        <li><b>чат</b>на три дня</li>
+        <li><b>чат</b>поддержки</li>
       </ul>
       <dl class="when wrap">
-        <div><dt>неделя</dt><dd data-field="dates">три вечера, даты после вебинара</dd></div>
-        <div><dt>вебинар</dt><dd data-field="webinar">27 августа, 19:00</dd></div>
-        <div><dt>формат</dt><dd data-field="time">90 минут, вечером, онлайн</dd></div>
+        <div><dt>неделя</dt><dd>6 дней, с 7 по 12 сентября</dd></div>
+        <div><dt>эфиры</dt><dd data-field="dates">7, 9 и 12 сентября</dd></div>
+        <div><dt>вебинар</dt><dd data-field="webinar">сегодня, 27 августа, 19:00</dd></div>
       </dl>
     </section>
 
@@ -114,10 +123,10 @@
         <p class="eye">формат</p>
         <h2>что внутри</h2>
         <ul class="plain">
-          <li>Три вечера, чтобы проанализировать свой сценарий и понять вектор дальнейшего движения.</li>
+          <li>Шесть дней работы: три эфира 7, 9 и 12 сентября и чат поддержки между ними.</li>
           <li>Разбор типичных жизненных ситуаций без критики, осуждения и навешивания диагнозов.</li>
-          <li>Короткая и понятная практика для закрепления материала после каждого эфира.</li>
-          <li>К финалу у вас появится ясная картина происходящего и понимание следующего шага.</li>
+          <li>Короткая практика после каждого эфира, чтобы закрепить материал в обычном дне.</li>
+          <li>К финалу недели у вас будет ясная картина своего сценария и понимание следующего шага.</li>
         </ul>
       </div>
       <div class="panel invert">
@@ -127,7 +136,7 @@
           <li>Это образовательный формат, а не психотерапия или заочное лечение зависимого человека.</li>
           <li>Мы не обсуждаем ваших близких, так как они не давали на это согласия.</li>
           <li>Психологи не дают прямых указаний уходить или оставаться. Решение всегда принимаете вы.</li>
-          <li>Мы честно говорим, что за три вечера многолетние отношения не перестроятся как по волшебству.</li>
+          <li>За шесть дней многолетние отношения не перестроятся как по волшебству. Это честный старт, не финал.</li>
         </ul>
       </div>
     </section>
@@ -136,11 +145,11 @@
       <div class="pad wrap">
         <p class="eye">результат</p>
         <h2>что уносите</h2>
-        <p class="lead">Вы получите не просто набор красивых цитат, а три надежные опоры, которые мы выстроим за эти дни.</p>
+        <p class="lead">Вы получите не набор красивых цитат, а три опоры, которые мы выстроим за эти дни.</p>
         <ol class="steps">
           <li><span>01</span><div><strong>где вы сейчас</strong><p>Вы определите свой сценарий и поймёте, на каком именно этапе находитесь.</p></div></li>
           <li><span>02</span><div><strong>что удерживает</strong><p>Вы увидите, в какие моменты гиперконтроль и чувство вины подменяют истинную заботу.</p></div></li>
-          <li><span>03</span><div><strong>куда дальше</strong><p>Вы сформулируете свою ближайшую цель и поймёте, какой модуль нашей школы поможет её достичь.</p></div></li>
+          <li><span>03</span><div><strong>куда дальше</strong><p>Вы сформулируете ближайшую цель и поймёте, какой модуль школы поможет её достичь.</p></div></li>
         </ol>
       </div>
     </section>
@@ -148,21 +157,21 @@
     <section class="band mint" id="week">
       <div class="pad wrap">
         <p class="eye">программа</p>
-        <h2>три вечера</h2>
-        <p class="lead">Ключевые темы методологии школы сжаты в три насыщенных вечера. Каждый эфир плавно подводит к вопросам следующего дня.</p>
+        <h2>три эфира</h2>
+        <p class="lead">Шесть дней. Три живых эфира 7, 9 и 12 сентября. Между встречами вы остаётесь в чате поддержки.</p>
         <ol class="days trio-days">
           <li>
-            <b>вечер 1 · 90 мин</b>
+            <b>эфир 1 · 7 сентября</b>
             <h3>что со мной происходит</h3>
             <p>Грань между любовью и полным растворением в другом человеке. Вы узнаете, почему от привычки спасать невозможно отказаться одним усилием воли и какую скрытую функцию выполняет это поведение.</p>
           </li>
           <li>
-            <b>вечер 2 · 90 мин</b>
+            <b>эфир 2 · 9 сентября</b>
             <h3>почему я не останавливаюсь</h3>
             <p>Вы знаете свои личные границы, но они рушатся из-за страха перед чужой реакцией. Разберёмся, почему настроение близкого человека полностью управляет вашим днём.</p>
           </li>
           <li>
-            <b>вечер 3 · 90 мин</b>
+            <b>эфир 3 · 12 сентября</b>
             <h3>что менять дальше</h3>
             <p>Выясним, почему старые роли возвращаются даже с новыми людьми. Мы построим маршрут из семи конкретных шагов и отметим те, которые вы уже прошли за время открытой недели.</p>
           </li>
@@ -173,14 +182,14 @@
     <section class="band paper" id="air">
       <div class="pad wrap">
         <p class="eye">как проходит</p>
-        <h2>один вечер</h2>
+        <h2>один эфир</h2>
         <ol class="rail">
           <li>узнать себя в ситуации</li>
           <li>понять механизм проблемы</li>
           <li>разобрать живые примеры</li>
           <li>получить практику на завтра</li>
         </ol>
-        <p class="mute air-note">Эфиры проводят профессиональные психологи нашей школы. Вы можете не включать камеру, использовать псевдоним и просто слушать. Доступ к чату сохранится на протяжении всех трёх дней.</p>
+        <p class="mute air-note">Эфиры проводят психологи школы. Камеру можно не включать, псевдоним допустим, можно просто слушать. Чат поддержки открыт все шесть дней недели.</p>
       </div>
     </section>
 
@@ -200,20 +209,20 @@
     <section class="reg" id="offer">
       <div class="offer-copy">
         <p class="eye">открытая неделя</p>
-        <h2>три вечера · 2 990 ₽</h2>
-        <p class="lead">После бесплатного вебинара 27 августа начнутся три дня глубокой практической работы в закрытом чате.</p>
+        <h2>6 дней · 2 990 ₽</h2>
+        <p class="lead">Три эфира 7, 9 и 12 сентября и чат поддержки на всю неделю. Сегодня в 19:00 можно сначала прийти на бесплатный вебинар.</p>
         <ul class="offer-points">
-          <li>Вечер 1: распознать свой сценарий</li>
-          <li>Вечер 2: осознать причины удержания</li>
-          <li>Вечер 3: составить личный маршрут</li>
+          <li>7 сентября: распознать свой сценарий</li>
+          <li>9 сентября: понять, что удерживает</li>
+          <li>12 сентября: собрать личный маршрут</li>
         </ul>
       </div>
       <div class="offer-card">
         <p class="offer-kicker">участие</p>
         <p class="offer-price" data-field="price">2 990 ₽</p>
-        <p class="mute">Три вечера по 90 минут, закрытый чат участников и ежедневные практики. Точные даты мы объявим на вебинаре 27 августа.</p>
-        <a class="btn light" id="pay" data-link="pay" href="#offer">перейти к оплате</a>
-        <p class="mute offer-note">Оформление заказа и оплата происходят на защищённой странице платформы GetCourse.</p>
+        <p class="mute">6 дней. Три эфира. Чат поддержки. Оплата на GetCourse: имя и почта собираются там.</p>
+        <button class="btn light" type="button" data-open="sheet-pay">перейти к оплате</button>
+        <p class="mute offer-note">Форма откроется в окне на этой странице. Данные и платёж обрабатывает GetCourse.</p>
       </div>
     </section>
   </main>
@@ -225,7 +234,39 @@
     </div>
   </footer>
 
-  <a class="dock" href="#offer" hidden>оплатить</a>
+  <div class="dock" hidden>
+    <button type="button" data-open="sheet-webinar">вебинар</button>
+    <button type="button" data-open="sheet-pay">оплатить</button>
+  </div>
+
+  <div class="sheet" id="sheet-webinar" aria-hidden="true" role="dialog" aria-labelledby="webinar-title">
+    <div class="sheet-card" role="document">
+      <button class="sheet-x" type="button" data-close aria-label="Закрыть">закрыть</button>
+      <p class="eye">сегодня · бесплатно</p>
+      <h2 id="webinar-title">запись на вебинар</h2>
+      <p class="lead">27 августа, 19:00. Выберите одно окно: Telegram или сайт. Это запись на вводный эфир, не оплата недели.</p>
+      <div class="sheet-ways">
+        <a class="btn ico" data-link="tg" href="https://t.me/Shurov_ai_bot?start=guide" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.7 3.3c.3-.9-.6-1.7-1.5-1.3L2.4 9.2c-.9.4-.9 1.7.1 2l4.7 1.5 1.8 5.6c.2.7 1.1.9 1.6.4l2.6-2.5 4.5 3.3c.7.5 1.7.1 1.9-.7l3.1-15.5ZM8.4 12.6l9.7-6.1-7.6 7.3-.3 2.5-1.8-3.7Z"/></svg>
+          в телеграм
+        </a>
+        <a class="btn ghost ico" data-link="site" href="https://kira-ai.online/?src=guide" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 5h16v12H4V5Zm0 14h16v2H4v-2Zm8-6.5a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm0-2a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"/></svg>
+          на сайте
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sheet" id="sheet-pay" aria-hidden="true" role="dialog" aria-labelledby="pay-title">
+    <div class="sheet-card pay" role="document">
+      <button class="sheet-x" type="button" data-close aria-label="Закрыть">закрыть</button>
+      <p class="eye">открытая неделя</p>
+      <h2 id="pay-title">оплата</h2>
+      <p class="lead">2 990 ₽. 6 дней, три эфира 7, 9 и 12 сентября, чат поддержки. Форма GetCourse откроется ниже.</p>
+      <div class="pay-mount" id="gc-mount"></div>
+    </div>
+  </div>
 
   <script src="/config.js"></script>
   <script src="/app.js"></script>
